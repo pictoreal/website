@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+@media (max-width: 600px) {
+    html {
+        font-size: 50%
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .div_btn_navbar_small {
+        display: none;
+    }
+
+    .ss_skew {
+        width: 101vw;
+        height: 120vw;
+    }
+
+    .heading {
+        width: 70vw;
+        margin-top: 13vw;
+    }
+
+    .ofhide {
+        height: 100.5vw;
+    }
+
+    .mySlides {
+        top: 44vw;
+        height: 75vw;
+        -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    }
+
+    .slideshow_black {
+        top: -1vw;
+        height: 38vw;
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+        width: 101vw;
+        left: 1vw;
+        background-color: #0F0320;
+    }
+
+    .picto_heading {
+        width: 106vw;
+    }
+
+    .div_btn_navbar {
+        display: none;
+    }
+
+    .div_btn_navbar_mobile {
+        display: block;
+        position: relative;
+        width: 99vw;
+        text-align: center;
+        z-index: 1;
+        font-size: 4rem;
+    }
+
+    .div_btn_navbar_mobile > .btn {
+        margin: 2rem;
+        font-size: 2.2rem;
+    }
+
+    .div_btn_navbar_mobile > .btn--white::after {
+        border: 2px solid black;
+    }
+
+    .div_btn_navbar_mobile > .btn--white {
+        color: #000;
+    }
+
+    .slide_btn {
+        margin-top: 20vw;
+    }
+
+    .logo_navbar {
+        width: 7.7rem;
+    }
+
+    .logo_navbar_small {
+        width: 7.3rem;
+        min-width: 0;
+    }
+
+    .navbar_small {
+        min-height: 0;
+    }
+
+    .navbar {
+        left: 0;
+        width: 101vw;
+    }
+
+    .div_btn_navbar {
+        margin-left: 50%;
+        transform: translateX(-40%);
+    }
+
+    .heading-secondary {
+        margin-bottom: 3rem;
+    }
+
+    .heading-secondary {
+        margin-top: -18rem;
+    }
+
+    .composition__photo:hover {
+        outline: none;
+        -webkit-transform: translateX(-50%);
+        transform:  transform: translateX(-50%);
+        -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+        z-index: 20;
+
+    }
+
+    .composition__photo--p1 {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30rem;
+        top: 1rem !important;
+
+    }
+     .composition__photo--p1:hover{
+         transform: translateX(-50%);
+
+     }
+
+    .composition1__photo--p1 {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30rem;
+
+
+    }
+    .composition1__photo--p1:hover{
+        transform: translateX(-50%);
+    }
+
+    .feature-box {
+        margin: 0 7rem 0 7rem;
+    }
+
+    .heading-tertiary {
+        font-size: 2rem;
+    }
+
+    .card__cta {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .footer_skew {
+        margin-top: -25rem;
+    }
+
+    .btn_fill_1, .btn_fill_1:link, .btn_fill_1:visited {
+        margin-top: 0%;
+        margin-bottom: 10rem;
+    }
+
+    .navigation__link {
+        font-size: 4.4rem;
+    }
+
+    .logo_footer {
+        width: 35vw;
+    }
+
+    .vline {
+        height: 35vw;
+        top: -6vw;
+    }
+
+    .social_icons {
+        width: 10%;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+    .div_btn_navbar_small {
+        display: none;
+    }
+
+    .div_btn_navbar_small {
+        display: none;
+    }
+
+    .ss_skew {
+        width: 101vw;
+        height: 120vw;
+    }
+
+    .heading {
+        width: 70vw;
+        margin-top: 13vw;
+    }
+
+    .ofhide {
+        height: 100.5vw;
+    }
+
+    .mySlides {
+        top: 44vw;
+        height: 75vw;
+        -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    }
+
+    .slideshow_black {
+        top: -1vw;
+        height: 38vw;
+        border-bottom-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+        width: 101vw;
+        left: 1vw;
+        background-color: #0F0320;
+    }
+
+    .picto_heading {
+        width: 106vw;
+    }
+
+    .div_btn_navbar {
+        display: none;
+    }
+
+    .div_btn_navbar_mobile {
+        display: block;
+        position: relative;
+        width: 99vw;
+        text-align: center;
+        z-index: 1;
+        font-size: 4rem;
+    }
+
+    .div_btn_navbar_mobile > .btn {
+        margin: 2rem;
+        font-size: 2.2rem;
+    }
+
+    .div_btn_navbar_mobile > .btn--white::after {
+        border: 2px solid black;
+    }
+
+    .div_btn_navbar_mobile > .btn--white {
+        color: #000;
+    }
+
+    .slide_btn {
+        margin-top: 20vw;
+    }
+
+    .logo_navbar {
+        width: 7.7rem;
+    }
+
+    .logo_navbar_small {
+        width: 7.3rem;
+        min-width: 0;
+    }
+
+    .navbar_small {
+        min-height: 0;
+    }
+
+    .navbar {
+        left: 0;
+        width: 101vw;
+    }
+
+    .div_btn_navbar {
+        margin-left: 50%;
+        transform: translateX(-40%);
+    }
+
+    .footer_skew {
+        margin-top: -25rem;
+        padding-bottom: 4rem;
+    }
+
+    .btn_fill_1, .btn_fill_1:link, .btn_fill_1:visited {
+        margin-top: 0%;
+        margin-bottom: 10rem;
+    }
+
+    .navigation__link {
+        font-size: 4.4rem;
+    }
+
+    .composition__photo:hover {
+        outline: none;  
+        -webkit-transform: translateX(-50%);
+        transform:translateX(-50%);
+        -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+        box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+        z-index: 20;
+
+    }
+
+    .composition__photo--p1 {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30rem;
+        top: 1rem !important;
+
+    }
+    .composition1__photo--p1:hover{
+        transform: translateX(-50%);
+    }
+
+    .composition1__photo--p1 {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30rem;
+    }
+
+    .logo_footer {
+        width: 32vw;
+    }
+
+    .vline {
+        height: 32vw;
+        top: -6vw;
+    }
+
+    .social_icons {
+        width: 10%;
+    }
+
+}
+
+
+
+
+
+

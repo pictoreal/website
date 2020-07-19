@@ -1,0 +1,77 @@
+body {
+    overflow-x: hidden;
+    background-color: #f7f7f7;
+}
+
+.slideshow_black {
+    background: rgba(0, 0, 0, 0.66);
+    position: absolute;
+    width: 100vw;
+    height: 108vh;
+    left: 0;
+    top: 0;
+    z-index: -9;
+}
+
+.mySlides {
+    position: absolute;
+    opacity: 0;
+    transition: all 1s ease;
+    overflow-x: hidden;
+    z-index: -10;
+    left: 0;
+    top: 0;
+    height: 108vh;
+}
+
+.slideshow_btns {
+    position: absolute;
+    background: radial-gradient(#000000ff, #00000000);
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 0;
+    top: 40%;
+    padding: 60px;
+    border-radius: 50%;
+    border: none;
+    transform: scale(2, 2);
+    transition: transform, opacity 0.5s;
+    z-index: 1;
+}
+
+.left {
+    left: 2.4rem;
+}
+
+.right {
+    right: 2.4rem;
+}
+
+.slideshow_btns:hover {
+    position: absolute;
+    opacity: 0.2;
+    top: 40%;
+}
+
+.ofhide {
+    position: relative;
+    height: 102vh;
+    width: 100vw;
+    top: 12vh;
+    padding: 0;
+    margin: 0;
+}
+
+.ss_skew {
+    z-index: 10;
+    background-color: #f7f7f7;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    left: -1vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
