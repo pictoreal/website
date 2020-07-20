@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Count Down</title>
+</head>
+<style>
+li {
+  display: inline-block;
+  font-size: 1em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+li span {
+  display: block;
+  font-size: 3.5rem;
+}
+.container
+{-webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(assets/images/j.jpeg);
+  -webkit-background-size: cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  height:690px;
+  width: 100% ;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; 
+font-family: 'Rowdies', cursive;
+  position: relative;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+   &:after
+   {
+   	display: block;
+   	content: " ";
+   	position: absolute;
+   	top: 10px;
+   	bottom: 10px;
+   	left:0;
+   	right: 10px;
+   	z-index: 0;
+
+   }
+
+
+h1
+{
+	font-size: 50px;
+	font-weight: 900px;
+	color: #fff;
+}
+
+h2
+{
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	font-size: 30px;
+}
+</style>
+
+
+
+
+
+
+
+<body>
+	 
+	<div class="container">
+		<img src="assets/images/picto.png" alt="" style="width:120px;height:120px;">
+       <h1><b>Pictoreal Volume 22</b></h1>
+       
+        	<h2>Coming Soon</h2>
+  
+         <ul>
+    <li><span id="days"></span><b>Days</b></li>
+    <li><span id="hours"></span><b>Hours</li></b></li>
+    <li><span id="minutes"></span><b>Minutes</b></li>
+    <li><span id="seconds"></span><b>Seconds</b></li>
+        </ul>
+    </div>
+   
+
+
+
+
+
+
+	<script>
+	  const second = 1000,
+      minute = second * 60,
+      hour = minute * 60,
+      day = hour * 24;
+
+let countDown = new Date('Sep 30, 2020 00:00:00').getTime(),
+    x = setInterval(function() 
+    {    
+
+      let now = new Date().getTime(),
+          distance = countDown - now;
+
+      document.getElementById('days').innerText = Math.floor(distance / (day)),
+        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
+        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+    }, second)
+	</script>
+</body>
+</html>
