@@ -28,17 +28,17 @@ li span {
   -moz-background-size:cover;
   -o-background-size:cover;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat:repeat;
   background-attachment: fixed;
   background-position: center center;
-  height:100vh;
+  height:100%;
   width: 100% ;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   box-sizing: border-box; 
-font-family: 'Rowdies', cursive;
+font-family: 'Lato', sans-serif;
   position: relative;
   justify-content: center;
   position: relative;
@@ -73,6 +73,126 @@ h2
 	color: #fff;
 	font-size: 30px;
 }
+ .social{
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.social_icons{
+    background-color: black;
+    position: relative;
+    display: inline-block;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    width: 3.5%;
+    border-radius: 50%;
+    filter: invert(100%);
+    transition: all 0.2s;
+
+}
+
+.social_icons:hover{
+    filter: invert(0%);
+    transition: all 0.2s;
+}
+@media (max-width: 600px)
+  {.social_icons
+   {
+        width: 10%;
+    }}
+.about
+{
+  margin-right: 20px;
+  margin-left: 25px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  box-sizing: border-box;
+  
+}
+.text
+{
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.links
+{
+  font-weight: 200px;
+  font-size: 40px;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+}
+.btn_fill_1, .btn_fill_1:link{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    position: relative;
+    font-size: 1.6rem;
+    border: none;
+    cursor: pointer
+}
+
+.btn_fill_1:hover {
+    -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2)
+}
+
+.btn_fill_1:hover::after {
+    transform: skewY(7deg);
+    -webkit-transform: scaleX(1.4) scaleY(1.6);
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0
+}
+
+.btn_fill_1:active, .btn_fill_1:focus {
+    outline: none;
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2)
+}
+
+.btn_fill_1--white {
+    background-color: #fff;
+    color: #777
+}
+
+.btn_fill_1--white::after {
+    background-color: #fff
+}
+
+.btn_fill_1::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: all .4s;
+    transition: all .4s
+}
+
+.btn_fill_1--animated {
+    -webkit-animation: moveInBottom .5s ease-out .75s;
+    animation: moveInBottom .5s ease-out .75s;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards
+}
+
+
+
 </style>
 
 
@@ -84,21 +204,44 @@ h2
 <body>
 	 
 	<div class="container">
+    <br><br><br>
 		<img src="../assets/images/logo.png" alt="" style="width:120px;height:120px;">
        <h1><b>Pictoreal Volume 22</b></h1>
-       
-        	<h2>Coming Soon</h2>
-  
-         <ul>
+       <h2>Tune in after</h2>
+        <ul class="time">
     <li><span id="days"></span><b>Days</b></li>
     <li><span id="hours"></span><b>Hours</li></b></li>
     <li><span id="minutes"></span><b>Minutes</b></li>
     <li><span id="seconds"></span><b>Seconds</b></li>
         </ul>
-    </div>
-   
 
+        <h2 class="last">to get amazed by power of thoughts!!!</h2>
+         
+<br><br>
 
+<div>
+<a href="#" class="btn_fill_1 btn_fill_1--white btn_fill_1--animated">EVENTS</a>
+  </div><br><br><br>
+     <div class="social">
+                    <a href="https://www.facebook.com/pictoreal/" target="_blank"><img src="../assets/images/social/fb.png"
+                            class="social_icons"></a>
+                    <a href="https://www.instagram.com/pictoreal/" target="_blank"><img
+                            src="../assets/images/social/insta.png" class="social_icons"></a>
+                    <a href="mailto:pictoreal@pict.edu"><img src="../assets/images/social/email.png"
+                            class="social_icons"></a>
+                </div>
+
+<br><br><br>
+  <div class="about">
+    <h1 class="text">About Us</h1>
+    <p style="line-height: 35px;">A magazine- a relevant one-should be a sound in itself and not just an echo. PICTOREAL is a community of artists, writers, social workers and creative thinkers who voice the activities in and around PICT.
+There’s a lot more to college than its curriculum. At PICTOREAL, we take up the responsibility of creating a collage by putting together articles, interviews, write-ups, pictures and document the various phases that form an integral part of a student’s life in PICT. Therefore, the best way to discover our college is through our annual magazine.
+Our club promotes the students and faculty members to showcase and hone their creative and artistic skills by acknowledging their work in our magazine.
+We conduct editing, designing, carrier guidance workshops, donation drives, photoshoots, exhibitions and competitions throughout the year with an aim to promote a constructive, healthy and competitive atmosphere in the college. 
+Our members in PICTOREAL always live by one motto-<i>‘May Thoughts,Colours and Words prevail!’</i>
+</p>
+</div>
+</div>
 
 
 
