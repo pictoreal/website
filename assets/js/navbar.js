@@ -9,11 +9,12 @@ var flag4 = 0;
 function scrollFunction() {
   //   console.log(document.documentElement.scrollTop);
 
-  if (window.location.href !== "https://pictoreal.in/#events") {
+  
     console.log(window.location.href);
     if (
       document.body.scrollTop > window.innerHeight * 0.25 ||
-      document.documentElement.scrollTop > window.innerHeight * 0.25
+      document.documentElement.scrollTop > window.innerHeight * 0.25||
+      window.location.href.split('#')[1] !== "events"
     ) {
       document.getElementById("navbar").className = "navbar_small";
       document.getElementById("logo_navbar").className = "logo_navbar_small";
@@ -34,7 +35,8 @@ function scrollFunction() {
       flag2 = 1;
     } else if (
       document.body.scrollTop < window.innerHeight * 0.8 ||
-      document.documentElement.scrollTop < window.innerHeight * 0.8
+      document.documentElement.scrollTop < window.innerHeight * 0.8 ||
+      window.location.href.split('#')[1] === "events"
     ) {
       document.getElementById("navbar").className = "navbar";
       document.getElementById("logo_navbar").className = "logo_navbar";
@@ -52,7 +54,7 @@ function scrollFunction() {
       }
       flag1 = 1;
     }
-  }
+  
 }
 
 function toTop() {
