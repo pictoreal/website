@@ -13,8 +13,7 @@ function scrollFunction() {
     console.log(window.location.href);
     if (
       document.body.scrollTop > window.innerHeight * 0.25 ||
-      document.documentElement.scrollTop > window.innerHeight * 0.25||
-      window.location.href.split('#')[1] !== "events"
+      document.documentElement.scrollTop > window.innerHeight * 0.25
     ) {
       document.getElementById("navbar").className = "navbar_small";
       document.getElementById("logo_navbar").className = "logo_navbar_small";
