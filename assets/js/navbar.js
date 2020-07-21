@@ -8,8 +8,9 @@ var flag3 = 0;
 var flag4 = 0;
 function scrollFunction() {
   //   console.log(document.documentElement.scrollTop);
-  console.log(window.location.href);
+
   if (window.location.href !== "https://pictoreal.in/#events") {
+    console.log(window.location.href);
     if (
       document.body.scrollTop > window.innerHeight * 0.25 ||
       document.documentElement.scrollTop > window.innerHeight * 0.25
