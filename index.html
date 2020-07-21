@@ -25,10 +25,21 @@
     <link rel="stylesheet" href="assets/styles/odometer-theme-default.css" />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/visible.js"></script>
+
     <style>
         html,
         body {
             overflow-x: hidden;
+        }
+
+        .mobile-only {
+            display: none!important;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .mobile-only {
+                display: block!important;
+            }
         }
     </style>
 
@@ -68,7 +79,8 @@
                     </li>
                     <li class="navigation__item"><a href="magazines"
                             class="navigation__link"><span>02</span>Magazines</a></li>
-                    <li class="navigation__item"><a href="#2" class="navigation__link"><span>03</span>Gallery</a></li>
+                    <li class="navigation__item"><a href="gallery" class="navigation__link"><span>03</span>Gallery</a>
+                    </li>
                     <li class="navigation__item"><a href="#3" class="navigation__link"><span>04</span>Team Members</a>
                     </li>
                     <li class="navigation__item"><a href="#5" class="navigation__link"><span>05</span>Contact Us</a>
@@ -101,8 +113,25 @@
                 <div class="slideshow_black"></div>
             </div>
         </div>
+        <script src="assets/js/slideshow.js"></script>
+        <a href="/vol22" class="mobile-only btn btn--white btn--animated " style="background: #000;
+    transform: translate(-50%);
+    left: 50%;
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+    padding: 1.28rem 3rem;
+    width: fit-content;">Volume
+            22</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><a href="/magazines"
+            class=" mobile-only btn btn--white btn--animated " style="background: #000;
+    transform: translate(-50%);
+    left: 50%;
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+    padding: 1.28rem 3rem;
+    width: fit-content;">Magazines</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </div>
-    <script src="assets/js/slideshow.js"></script>
+    </div>
+    
 
 
 
@@ -149,22 +178,22 @@
                         <div class="col-md-4" style="min-width: 20%;">
                             <h1><span class="counter odometer" id="members">50</span></h1>
                             <h3>Members</h3>
-                            <i target="_blank"  class="fa fa-users"></i>
+                            <i target="_blank" class="fa fa-users"></i>
                         </div>
                         <div class="col-md-4" style="min-width: 20%;">
                             <h1><span class="counter odometer" id="years">1</span></h1>
                             <h3>Years since inception</h3>
-                            <i target="_blank"  class="fa fa-clock"></i>
+                            <i target="_blank" class="fa fa-clock"></i>
                         </div>
                         <div class="col-md-4" style="min-width: 20%;">
                             <h1><span class="counter odometer" id="hello">1</span></h1>
                             <h3>Events in 2019-20</h3>
-                            <i target="_blank"  class="fa fa-calendar-week"></i>
+                            <i target="_blank" class="fa fa-calendar-week"></i>
                         </div>
                         <div class="col-md-4" style="min-width: 20%;">
                             <h1><span class="counter odometer" id="moolah"><span>₹</span>50,000</span></h1>
                             <h3>Donated in 2019-20</h3>
-                            <i target="_blank"  class="fa fa-money-check-alt"></i>
+                            <i target="_blank" class="fa fa-money-check-alt"></i>
                         </div>
                     </div>
                 </div>
@@ -476,8 +505,8 @@
 
 
 
-               
-                    <!-- <div class="col-1-of-3">
+
+                <!-- <div class="col-1-of-3">
                         <div class="card" data-aos="fade-up">
                             <div class="card__side card__side--front">
                                 <div class="card__picture card__picture--3" style="height: 20vh;">
@@ -565,14 +594,14 @@
                                     <h3 class="name">Prathamesh Shiralkar</h3>
                                 </div>
                                 <ul class="social">
-                                    <li><a href="https://pratham.live/" target="_blank"  class="fa fa-globe"
+                                    <li><a href="https://pratham.live/" target="_blank" class="fa fa-globe"
                                             aria-hidden="true"></a></li>
-                                   
-                                    <li><a href="https://www.linkedin.com/in/pnshiralkar" target="_blank"  class="fab fa-linkedin"
+
+                                    <li><a href="https://www.linkedin.com/in/pnshiralkar" target="_blank"
+                                            class="fab fa-linkedin" aria-hidden="true"></a></li>
+                                    <li><a href="https://github.com/pnshiralkar/" target="_blank" class="fab fa-github"
                                             aria-hidden="true"></a></li>
-                                    <li><a href="https://github.com/pnshiralkar/" target="_blank"  class="fab fa-github"
-                                            aria-hidden="true"></a></li>
-                                   
+
                                 </ul>
                             </div>
                         </div>
@@ -585,11 +614,11 @@
                                     <h3 class="name">Pratik Daigavane</h3>
                                 </div>
                                 <ul class="social">
-                                   
-                                    <li><a href="https://www.linkedin.com/in/pratikdaigavane/" target="_blank"  class="fab fa-linkedin"
-                                            aria-hidden="true"></a></li>
-                                    <li><a href="https://github.com/pratikdaigavane" target="_blank"  class="fab fa-github"
-                                            aria-hidden="true"></a></li>
+
+                                    <li><a href="https://www.linkedin.com/in/pratikdaigavane/" target="_blank"
+                                            class="fab fa-linkedin" aria-hidden="true"></a></li>
+                                    <li><a href="https://github.com/pratikdaigavane" target="_blank"
+                                            class="fab fa-github" aria-hidden="true"></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -602,11 +631,11 @@
                                     <h3 class="name">Rohit Pardeshi</h3>
                                 </div>
                                 <ul class="social">
-                                  
-                                    <li><a href="https://www.linkedin.com/in/rohit-pardeshi-785921176" target="_blank"  class="fab fa-linkedin"
-                                            aria-hidden="true"></a></li>
-                                    <li><a href="https://github.com/rohitpardeshi04" target="_blank"  class="fab fa-github"
-                                            aria-hidden="true"></a></li>
+
+                                    <li><a href="https://www.linkedin.com/in/rohit-pardeshi-785921176" target="_blank"
+                                            class="fab fa-linkedin" aria-hidden="true"></a></li>
+                                    <li><a href="https://github.com/rohitpardeshi04" target="_blank"
+                                            class="fab fa-github" aria-hidden="true"></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -624,10 +653,10 @@
                                     <h3 class="name">Devangini Shinde</h3>
                                 </div>
                                 <ul class="social">
-                                
-                                    <li><a  href="https://www.linkedin.com/in/devangini-shinde-287319197" target="_blank"  class="fab fa-linkedin"
-                                            aria-hidden="true"></a></li>
-                                    <li><a href="https://github.com/Devangini01" target="_blank"  class="fab fa-github"
+
+                                    <li><a href="https://www.linkedin.com/in/devangini-shinde-287319197" target="_blank"
+                                            class="fab fa-linkedin" aria-hidden="true"></a></li>
+                                    <li><a href="https://github.com/Devangini01" target="_blank" class="fab fa-github"
                                             aria-hidden="true"></a></li>
                                 </ul>
                             </div>
@@ -641,15 +670,15 @@
                                     <h3 class="name">Mitali Sonawane</h3>
                                 </div>
                                 <ul class="social">
-                                   
-                                    <li><a href="https://www.linkedin.com/in/mitali-sonawane-011754199" target="_blank"  class="fab fa-linkedin"
-                                            aria-hidden="true"></a></li>
-                                    <li><a href="https://github.com/mitalirs" target="_blank"  class="fab fa-github"
+
+                                    <li><a href="https://www.linkedin.com/in/mitali-sonawane-011754199" target="_blank"
+                                            class="fab fa-linkedin" aria-hidden="true"></a></li>
+                                    <li><a href="https://github.com/mitalirs" target="_blank" class="fab fa-github"
                                             aria-hidden="true"></a></li>
                                 </ul>
                             </div>
                         </div>
-                       
+
                     </div>
                 </div>
         </div>
@@ -778,7 +807,7 @@
                 <a onclick="toTop()" style="cursor: pointer;"><img src="assets/images/logo.png" class="logo_footer"
                         id="logo_footer"></a><br>
                 <div class="footer_col">
-                    <a class="footer_links" href="">Gallery</a><br>
+                    <a class="footer_links" href="gallery">Gallery</a><br>
                     <a class="footer_links" href="#events">Events</a><br>
                     <a class="footer_links" href="">Our Team</a><br>
 

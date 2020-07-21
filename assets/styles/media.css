@@ -191,7 +191,7 @@
 
   .ss_skew {
     width: 101vw;
-    height: 75vh;
+    height: 70vh;
   }
 
   .heading {
@@ -204,7 +204,7 @@
   }
 
   .mySlides {
-    top: 35vh;
+    top: 25vh;
     height: 75vw;
     -webkit-box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
@@ -212,7 +212,7 @@
 
   .slideshow_black {
     top: 0vw;
-    height: 35vh;
+    height: 25vh;
     /* border-bottom-left-radius: 5%; */
     /* border-bottom-right-radius: 5%; */
     width: 101vw;
@@ -335,4 +335,7 @@
   .social_icons {
     width: 10%;
   }
+}
+.mobile-only {
+  display: none;
 }
