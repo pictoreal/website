@@ -219,7 +219,7 @@
   color: #fff;
 }
 .pictotreal-heading {
-  margin-top: 11rem;
+  margin-top: 5rem;
 }
 @media (max-width: 600px) {
   .social_handles {
@@ -227,7 +227,7 @@
     font-size: 4rem;
   }
   .pictotreal-heading {
-    margin-top: 15rem;
+    margin-top: 12rem;
     font-size: 20vw;
   }
 }
