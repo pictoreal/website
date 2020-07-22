@@ -1,0 +1,19 @@
+{
+    "thumbnailHeight": "150",
+    "thumbnailWidth": "150",
+    "itemsBaseURL": "http://localhost:8080/assets/images/gallery/",
+    "items": [
+        {
+            "title": "Picto Social",
+            "ID": 1,
+            "src": "Picto Social/1.jpg",
+            "kind": "album"
+        },
+        {
+            "src": "Picto Social/1.jpg",
+            "srct": "Picto Social/thumbs/1_tn.jpg",
+            "albumID": 1,
+            "ID": 1001
+        }
+    ]
+}
