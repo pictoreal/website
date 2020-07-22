@@ -1,0 +1,8 @@
+{
+  "thumbnailHeight":  "150",
+  "thumbnailWidth":   "150",
+  "itemsBaseURL":     "http://localhost:8080/assets/images/gallery/",
+
+  "items": [
+  ]
+}
