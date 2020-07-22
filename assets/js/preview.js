@@ -12,6 +12,7 @@ function getUrlVars() {
 }
 
 volumes = {
+    18: {url: "https://www.yumpu.com/en/embed/view/6Kcdq79OVz8Nt5uW", name: "Pictoreal Volume 18"},
     19: {url: "https://www.yumpu.com/en/embed/view/mi1wtA6cOuJpjSFY", name: "Pictoreal Volume 19"},
     20: {url: "https://www.yumpu.com/en/embed/view/ZQWHTJI3yPDF8M1m", name: "Pictoreal Volume 20"},
 }
