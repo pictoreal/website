@@ -115,7 +115,7 @@
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 300px) {
   .popup1__content {
     position: absolute;
     padding: 5rem;

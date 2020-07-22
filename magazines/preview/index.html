@@ -1,44 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Read Online</title>
-    <link href="/assets/styles/navbar.css" rel="stylesheet">
+    <link href="/assets/styles/navbar.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="/assets/styles/preview.css">
+    <link rel="stylesheet" href="/assets/styles/preview.css" />
     <script src="/assets/js/preview.js"></script>
-</head>
-<body>
-<div style="background-color: transparent; opacity: 1">
+  </head>
+  <body>
+    <div style="background-color: transparent; opacity: 1;">
+      <div class="navbar" id="navbar">
+        <a href="/" style="cursor: pointer;"
+          ><img
+            src="/assets/images/logo.png"
+            alt="Pictoreal logo"
+            class="logo_navbar_small"
+            id="logo_navbar"
+        /></a>
 
-    <div class="navbar" id="navbar">
-        <a href="/" style="cursor: pointer;"><img src="/assets/images/logo.png" alt="Pictoreal logo"
-                                                           class="logo_navbar_small" id="logo_navbar"></a>
-    <h1 class="page-title" id="page-title"></h1>
+        <h1 class="page-title" id="page-title"></h1>
+      </div>
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-    </div>
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-        <label for="navi-toggle" class="navigation__button small" id="navigation__button">
-            <span class="navigation__icon small_ico" id="navigation__icon">&nbsp;</span>
+        <label
+          for="navi-toggle"
+          class="navigation__button small"
+          id="navigation__button"
+        >
+          <span class="navigation__icon small_ico" id="navigation__icon"
+            >&nbsp;</span
+          >
         </label>
 
-        <div class="navigation__background" id="navigation__background">&nbsp;</div>
+        <div class="navigation__background" id="navigation__background">
+          &nbsp;
+        </div>
 
         <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="vol22" class="navigation__link"><span>01</span>Volume 22</a></li>
-                <li class="navigation__item"><a href="magazines" class="navigation__link"><span>02</span>Magazines</a></li>
-                <li class="navigation__item"><a href="#2" class="navigation__link"><span>03</span>Gallery</a></li>
-                <li class="navigation__item"><a href="#3" class="navigation__link"><span>04</span>Team Members</a>
-                </li>
-                <li class="navigation__item"><a href="#5" class="navigation__link"><span>05</span>Contact Us</a>
-                </li>
-            </ul>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="vol22" class="navigation__link"
+                ><span>01</span>Volume 22</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="magazines" class="navigation__link"
+                ><span>02</span>Magazines</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="gallery" class="navigation__link"
+                ><span>03</span>Gallery</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="team" class="navigation__link"
+                ><span>04</span>Team Members</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#5" class="navigation__link"
+                ><span>05</span>Contact Us</a
+              >
+            </li>
+          </ul>
         </nav>
+      </div>
     </div>
-</div>
-    <iframe class="frame" id="frame" src="" frameborder="0" allowfullscreen="true"  allowtransparency="true"></iframe>
-</body>
+    <iframe
+      class="frame"
+      id="frame"
+      src=""
+      frameborder="0"
+      allowfullscreen="true"
+      allowtransparency="true"
+    ></iframe>
+  </body>
 </html>
