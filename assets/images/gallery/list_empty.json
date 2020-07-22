@@ -1,6 +1,6 @@
 {
-  "thumbnailHeight":  "150",
-  "thumbnailWidth":   "150",
+  "thumbnailHeight":  "250",
+  "thumbnailWidth":   "400",
   "itemsBaseURL":     "http://localhost:8080/assets/images/gallery/",
 
   "items": [
