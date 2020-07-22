@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>College Clubs</title>
+</head>
+<style>
+	*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+	.section-features {
+  padding: 10rem 0 20rem;
+  transform: scale(0.67);
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(37, 190, 255, 0.8),
+    rgba(86, 67, 250, 0.8)
+  );
+  background-size: cover;
+  -webkit-transform: skewY(-7deg);
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+}
+
+.row {
+  transform: skewY(7deg);
+  max-width: 87.5rem;
+  margin: 0 auto;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row [class^="col-"] {
+  float: left;
+}
+
+.row [class^="col-"]:not(:last-child) {
+  margin-right: 6rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row [class^="col-"]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row [class^="col-"] {
+    width: 100% !important;
+  }
+}
+
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+
+.feature-box:hover {
+  -webkit-transform: translateY(-1.5rem) scale(1.03);
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 2rem) / 4);
+}
+
+.row .col-1-of-4 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 15rem;
+  margin: 2rem;
+  font-size: 1.5rem;
+  padding: 2.0rem;
+  text-align: center;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+
+.btn_fill_,
+.btn_fill_:link,
+.btn_fill_:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 20rem;
+  margin-top: 4rem;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn_fill_:hover {
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn_fill_:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn_fill_:active,
+.btn_fill_:focus {
+  outline: none;
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn_fill_::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.btn_fill_--animated {
+  -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
+.btn_fill_-text:hover {
+  background-color: #55c57a;
+  color: #fff;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+
+.btn_fill_-text:active {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.heading-secondary {
+  font-size: 3.5rem;
+  transform: skewY(7deg);
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#000000),
+    to(#000000)
+  );
+  background-image: linear-gradient(to right, #000000, #000000);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1rem !important;
+}
+
+</style>
+
+
+
+<body>
+	 <section class="section-features" id="events">
+
+
+        <div class="u-center-text u-margin-bottom-big">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                   College Clubs
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Artcircle</h3>
+                        <a href="#popup1" class="btn_fill_ btn_fill_--white " onclick="on1()">MEMBERS</a>
+                    </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">Athletics</h3>
+                        
+                        <a href="#popup2" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">Badminton</h3>
+                        
+                        <a href="#popup3" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+               
+            </div>
+
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">Baskerball Boys </h3>
+                        
+                        <a href="#popup4" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">Basketball Girls</h3>
+                        
+                        <a href="#popup5" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">Cricket</h3>
+                        
+                        <a href="#popup6" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+               
+            </div>
+
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Debsoc</h3>
+                        
+                        <a href="#popup1" class="btn_fill_ btn_fill_--white " onclick="on1()">MEMBERS</a>
+                    </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">EDC</h3>
+                        
+                        <a href="#popup2" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">Football Boys</h3>
+                        
+                        <a href="#popup3" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+               
+            </div>
+
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">Football Girls </h3>
+                        
+                        <a href="#popup4" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">INC</h3>
+                        
+                        <a href="#popup5" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">PICT MUN CLUB</h3>
+                        
+                        <a href="#popup6" class="btn_fill_ btn_fill_--white ">KNOW MORE</a>
+                    </div>
+                </div>
+
+               
+            </div>
+            
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+                        <h3 class="heading-tertiary u-margin-bottom-small">NSS</h3>
+                        
+                        <a href="#popup1" class="btn_fill_ btn_fill_--white " onclick="on1()">MEMBERS</a>
+                    </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">PASC</h3>
+                        
+                        <a href="#popup2" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">PCC</h3>
+                        
+                        <a href="#popup3" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+               
+            </div>
+
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">PCSB </h3>
+                        
+                        <a href="#popup4" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">PICTOREAL</h3>
+                        
+                        <a href="#popup5" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">PISB</h3>
+                        
+                        <a href="#popup6" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+               
+            </div>
+
+                       
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Robocon</h3>
+                        
+                        <a href="#popup1" class="btn_fill_ btn_fill_--white " onclick="on1()">MEMBERS</a>
+                    </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">Table Tennis</h3>
+                        
+                        <a href="#popup2" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">TEDxPICT</h3>
+                        
+                        <a href="#popup3" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+               
+            </div>
+
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">TnP</h3>
+                        
+                        <a href="#popup4" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">Volleyball Boys</h3>
+                        
+                        <a href="#popup5" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="feature-box" data-aos="zoom-in">
+
+                        <h3 class="heading-tertiary u-margin-bottom-small">Volleyball Girls</h3>
+                        
+                        <a href="#popup6" class="btn_fill_ btn_fill_--white ">MEMBERS</a>
+                    </div>
+                </div>
+
+               
+            </div>
+    </section>
+</body>
+</html>
