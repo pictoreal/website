@@ -16,6 +16,7 @@ volumes = {
     19: {url: "https://www.yumpu.com/en/embed/view/mi1wtA6cOuJpjSFY", name: "Pictoreal Volume 19"},
     20: {url: "https://www.yumpu.com/en/embed/view/ZQWHTJI3yPDF8M1m", name: "Pictoreal Volume 20"},
     21: {url: "https://www.yumpu.com/en/embed/view/1Nxq8IadrnWpzeBO", name: "Pictoreal Volume 21"},
+    try: {url: "https://www.youtube.com/embed/0w_fM3ub5nA", name: "YT Live Try"}
 }
 
 function start() {
