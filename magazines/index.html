@@ -1,157 +1,215 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:>
 
-    <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157561125-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157561125-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-157561125-2');
-</script>
-<!-- Google Analytics -->
+    gtag('config', 'UA-157561125-2');
+  </script>
+  <!-- Google Analytics -->
 
-      <title>Magazines - Pictoreal</title>
-        
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
-        <link rel='stylesheet' href='../assets/styles/magazine.css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-       
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container">
-              <h1 class="display-4">Pictoreal Volumes</h1>
-              <p class="lead">Have a look at the pictoreal magazines!</p>
-          </div>
-        </div>
-        <style>
-        .no-gutters{
-        	box-shadow: 0 0.3rem 1rem rgba(0,0,0,.4);
-        }
-        </style>
-    </head>
+  <title>Magazines</title>
 
-    <body>
-      <div class= 'conatiner'>
-        <div class= 'container'>
-          <div class="row">
-            <div class="card mb-3 " >
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="../assets/images/picto-volumes/vol_2020_22_blur.png" class="card-img" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h1 class="card-title">Volume 22</h1>
-                    <p class="card-text">To be launched on:<br>23/07/2020 @ 6:00 PM</p>
-                    <div class="text-center">
-                      <button type="button" class="btn btn-dark"><a href="/vol22" class='url'>Read Online</a></button>
-                    </div>
-                  </div>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel='stylesheet' href='../assets/styles/magazine.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="../assets/styles/navbar.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../assets/styles/media.css" />
+
+
+  <style>
+    .no-gutters {
+      box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, .4);
+    }
+
+    .btn-dark {
+      background-color: #000;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .card-title {
+        margin-top: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar" id="navbar" style="background: #0f0320;">
+    <a href="/" style="cursor: pointer;"><img src="/assets/images/logo.png" alt="Pictoreal logo"
+        class="logo_navbar_small" id="logo_navbar" /></a>
+
+    <h1 class="page-title" id="page-title"></h1>
+  </div>
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+    <label for="navi-toggle" class="navigation__button small" id="navigation__button">
+      <span class="navigation__icon small_ico" id="navigation__icon">&nbsp;</span>
+    </label>
+
+    <div class="navigation__background" id="navigation__background">
+      &nbsp;
+    </div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="/" class="navigation__link">Home</a>
+        </li>
+        <li class="navigation__item">
+          <a href="/magazines" class="navigation__link">Magazines</a>
+        </li>
+        <li class="navigation__item">
+          <a href="/gallery" class="navigation__link">Gallery</a>
+        </li>
+        <li class="navigation__item">
+          <a href="/team" class="navigation__link">Team Members</a>
+        </li>
+        <li class="navigation__item">
+          <a href="/contact" class="navigation__link">Contact Us</a>
+        </li>
+        <li class="navigation__item">
+          <a href="/clubs" class="navigation__link">College Clubs</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="jumbotron jumbotron-fluid" style="margin-top: 8rem;">
+    <div class="container">
+      <h1 class="display-4">Pictoreal Volumes</h1>
+      <p class="lead">Have a look at the pictoreal magazines!</p>
+    </div>
+  </div>
+  <div class='conatiner'>
+    <div class='container'>
+      <div class="row">
+        <div class="card mb-3 ">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="../assets/images/picto-volumes/vol_2020_22_blur.png" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h1 class="card-title">Volume 22</h1>
+                <p class="card-text">To be launched on:<br>23/07/2020 @ 6:00 PM</p>
+                <div class="text-center">
+                  <button type="button" class="btn btn-dark"><a href="/vol22" class='url'>Read Online</a></button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class= 'container'>
-          <div class="row">
-            <div class="card mb-3 " >
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="../assets/images/picto-volumes/vol_2019_21.jpg" class="card-img" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h1 class="card-title">Volume 21</h1>
-                    <p class="card-text">Details</p>
-                    <div class="text-center">
-                    
-                      <a href="/magazines/preview/?vol=21"><button type="button" class="btn btn-dark" >Read Online</button></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class= 'container'>
-          <div class="row">
-            <div class="card mb-3 " >
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="../assets/images/picto-volumes/vol_2018_20.jpg" class="card-img" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h1 class="card-title">Volume 20</h1>
-                    <p class="card-text">Details</p>
-                    <div class="text-center">
-                      <a href="/magazines/preview/?vol=20"><button type="button" class="btn btn-dark" >Read Online</button></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class= 'container'>
-          <div class="row">
-            <div class="card mb-3 " >
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="../assets/images/picto-volumes/vol_2017_19.png" class="card-img" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h1 class="card-title">Volume 19</h1>
-                    <p class="card-text">Details</p>
-                    <div class="text-center">
-                      <a href="/magazines/preview/?vol=19"><button type="button" class="btn btn-dark" >Read Online</button></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class= 'container'>
-          <div class="row">
-            <div class="card mb-3 " >
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="../assets/images/picto-volumes/vol_2016_18.jpg" class="card-img" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h1 class="card-title">Volume 17</h1>
-                    <p class="card-text">Details</p>
-                    <div class="text-center">
-                      <a href="/magazines/preview/?vol=17"><button type="button" class="btn btn-dark" >Read Online</button></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
       </div>
-      <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </div>
+    <div class='container'>
+      <div class="row">
+        <div class="card mb-3 ">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="../assets/images/picto-volumes/vol_2019_21.jpg" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h1 class="card-title">Volume 21</h1>
+                <p class="card-text">April 2019</p>
+                <div class="text-center">
+
+                  <a href="/magazines/preview/?vol=21"><button type="button" class="btn btn-dark">Read
+                      Online</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class="row">
+        <div class="card mb-3 ">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="../assets/images/picto-volumes/vol_2018_20.jpg" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h1 class="card-title">Volume 20</h1>
+                <p class="card-text">April 2018</p>
+                <div class="text-center">
+                  <a href="/magazines/preview/?vol=20"><button type="button" class="btn btn-dark">Read
+                      Online</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class="row">
+        <div class="card mb-3 ">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="../assets/images/picto-volumes/vol_2017_19.png" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h1 class="card-title">Volume 19</h1>
+                <p class="card-text">April 2017</p>
+                <div class="text-center">
+                  <a href="/magazines/preview/?vol=19"><button type="button" class="btn btn-dark">Read
+                      Online</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class="row">
+        <div class="card mb-3 ">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="../assets/images/picto-volumes/vol_2016_18.jpg" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h1 class="card-title">Volume 17</h1>
+                <p class="card-text"></p>
+                <div class="text-center">
+                  <a href="/magazines/preview/?vol=17"><button type="button" class="btn btn-dark">Read
+                      Online</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
        <script>
         AOS.init()
       </script> -->
-      
 
 
 
 
-      <!-- <div class='conatiner'>
+
+  <!-- <div class='conatiner'>
         <div class='row'>
           <div class='col-lg-4'>
             <div class='container'>
@@ -193,7 +251,8 @@
         </div>
 
       </div> -->
-    </body>
+</body>
+
 </html>
 
 <!-- 
@@ -251,6 +310,3 @@
     </div>
   </div>
 </div> -->
-
-
-    
