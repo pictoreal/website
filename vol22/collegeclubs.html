@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>College Clubs</title>
-
+  <link href="../assets/styles/navbar.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../assets/styles/media.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157561125-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -196,10 +197,10 @@
   transform: translateY(0);
 }
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 4rem;
   transform: skewY(7deg);
   margin-bottom: 5rem;
-  margin-top: 5rem;
+  margin-top: 15rem;
   text-transform: uppercase;
   font-weight: 500;
   display: inline-block;
@@ -474,6 +475,58 @@
 
 
 <body>
+     <div class="navbar" id="navbar" style="background: #0f0320;">
+          <a href="/" style="cursor: pointer;"
+            ><img
+              src="../assets/images/logo.png"
+              alt="Pictoreal logo"
+              class="logo_navbar_small"
+              id="logo_navbar"
+          /></a>
+    
+          <h1 class="page-title" id="page-title"></h1>
+        </div>
+        <div class="navigation">
+          <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+    
+          <label
+            for="navi-toggle"
+            class="navigation__button small"
+            id="navigation__button"
+          >
+            <span class="navigation__icon small_ico" id="navigation__icon"
+              >&nbsp;</span
+            >
+          </label>
+    
+          <div class="navigation__background" id="navigation__background">
+            &nbsp;
+          </div>
+    
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="/" class="navigation__link"><span>01</span>Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="/magazines" class="navigation__link"
+                  ><span>02</span>Magazines</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="/gallery" class="navigation__link"
+                  ><span>03</span>Gallery</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="/team" class="navigation__link"
+                  ><span>04</span>Team Members</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+    
 	 <section class="section-features" id="events">
 
 
