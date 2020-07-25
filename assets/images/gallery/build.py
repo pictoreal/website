@@ -6,7 +6,7 @@ import shutil
 def thumb(d, filename):
 	filepath = "{}/{}".format(d,filename)
 	im = Image.open(filepath)
-	im.thumbnail((200,200))
+	im.thumbnail((250,400))
 	im.save("{}/thumbs/{}_tn{}".format(d, os.path.splitext(filename)[0], os.path.splitext(filename)[1]))
 	return "{}/thumbs/{}_tn{}".format(d, os.path.splitext(filename)[0], os.path.splitext(filename)[1])
 	

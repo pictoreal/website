@@ -1,81 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Read Online</title>
-    <link href="/assets/styles/navbar.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="/assets/styles/preview.css" />
-    <script src="/assets/js/preview.js"></script>
-  </head>
-  <body>
-    <div style="background-color: transparent; opacity: 1;">
-      <div class="navbar" id="navbar">
-        <a href="/" style="cursor: pointer;"
-          ><img
-            src="/assets/images/logo.png"
-            alt="Pictoreal logo"
-            class="logo_navbar_small"
-            id="logo_navbar"
-        /></a>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157561125-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        <h1 class="page-title" id="page-title"></h1>
-      </div>
-      <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+    gtag('config', 'UA-157561125-2');
+  </script>
+  <!-- Google Analytics -->
+  
+  
+    <!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+	<link rel="manifest" href="/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#0F0320">
+	<meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#0F0320">
+	<!-- Favicons -->
 
-        <label
-          for="navi-toggle"
-          class="navigation__button small"
-          id="navigation__button"
-        >
-          <span class="navigation__icon small_ico" id="navigation__icon"
-            >&nbsp;</span
-          >
-        </label>
+  <meta charset="UTF-8" />
+  <title>Read Online</title>
+  <link href="/assets/styles/navbar.css" rel="stylesheet" />
 
-        <div class="navigation__background" id="navigation__background">
-          &nbsp;
-        </div>
+  <link rel="stylesheet" href="/assets/styles/preview.css" />
+  <script src="/assets/js/preview.js"></script>
+</head>
 
-        <nav class="navigation__nav">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="vol22" class="navigation__link"
-                ><span>01</span>Volume 22</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="magazines" class="navigation__link"
-                ><span>02</span>Magazines</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="gallery" class="navigation__link"
-                ><span>03</span>Gallery</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="team" class="navigation__link"
-                ><span>04</span>Team Members</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="#5" class="navigation__link"
-                ><span>05</span>Contact Us</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
+<body>
+  <div style="background-color: transparent; opacity: 1;">
+    <div class="navbar" id="navbar">
+      <a href="/" style="cursor: pointer;"><img src="/assets/images/logo.png" alt="Pictoreal logo"
+          class="logo_navbar_small" id="logo_navbar" /></a>
+
+      <h1 class="page-title" id="page-title"></h1>
     </div>
-    <iframe
-      class="frame"
-      id="frame"
-      src=""
-      frameborder="0"
-      allowfullscreen="true"
-      allowtransparency="true"
-    ></iframe>
-  </body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button small" id="navigation__button">
+        <span class="navigation__icon small_ico" id="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background" id="navigation__background">
+        &nbsp;
+      </div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="/" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/magazines" class="navigation__link">Magazines</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/gallery" class="navigation__link">Gallery</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/team" class="navigation__link">Team Members</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/contact" class="navigation__link">Contact Us</a>
+          </li>
+          <li class="navigation__item">
+            <a href="/clubs" class="navigation__link">College Clubs</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <iframe class="frame" id="frame" src="" frameborder="0" allowfullscreen="true" allowtransparency="true"></iframe>
+</body>
+
 </html>

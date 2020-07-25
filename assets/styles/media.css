@@ -339,3 +339,8 @@
 .mobile-only {
   display: none;
 }
+@media (max-width: 600px) {
+  .navigation__link {
+    font-size: 3.4rem;
+  }
+}
