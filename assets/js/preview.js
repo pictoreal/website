@@ -33,7 +33,7 @@ volumes = {
     name: "Pictoreal Volume 22",
   },
   23: {
-    url: "https://www.yumpu.com/xx/embed/view/U5rPpZOj9qCAL3KB",
+    url: "https://www.yumpu.com/en/embed/view/XfPDm7HNEop26LMr",
     name: "Pictoreal Volume 23",
   },
 };
