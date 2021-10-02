@@ -1,8 +1,8 @@
 # Pictoreal Website
 
-### [Pictoreal website](https://pictoreal.in/)
+### [Pictoreal website](https://pict-o-real.in/)
 
-### [Head over to this link to check out the issues](https://github.com/pictoreal/website/issues)
+### [Head over to this link to check out the issues](https://github.com/pictoreal/website/tree/pictoreal2021)
 
 ## About Pictoreal
 
