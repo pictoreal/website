@@ -1,875 +1,632 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:>
+<html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157561125-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        gtag('config', 'UA-157561125-2');
-    </script>
-    <!-- Google Analytics -->
+  <title>PICTOREAL</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#0F0320">
-    <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#0F0320">
-    <!-- Favicons -->
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link href="assets/styles/navbar.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles/slideshow.css">
-    <link rel="stylesheet" href="assets/styles/foooter.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/1.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/2.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/4.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/mag.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/5.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/6.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/poll.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/poll.css">
-    <link rel="stylesheet" type="text/css" href="assets/styles/team.css">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="assets/styles/media.css">
-    <link rel="stylesheet" href="assets/styles/developers.css">
-    <link rel="stylesheet" href="assets/styles/preloader.css">
-    <script src="https://github.hubspot.com/odometer/odometer.js"></script>
-    <link rel="stylesheet" href="assets/styles/odometer-theme-default.css" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="assets/js/visible.js"></script>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-    <style>
-        html,
-        body {
-            overflow-x: hidden;
-        }
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-        .mobile-only {
-            display: none !important;
-        }
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style3.css">
+  <link rel="stylesheet" href="assets/css/style2.css">
 
-        @media only screen and (max-width: 600px) {
-            .mobile-only {
-                display: block !important;
-            }
-        }
-    </style>
-
-    <title>Pictoreal - Thoughts, Colours and Words!</title>
-    <script src="assets/js/navbar.js"></script>
+  <!-- =======================================================
+  * Template Name: Sailor - v4.7.0
+  * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
 
-    <div id="overlayer">
-        <div class="loader" style="text-align: center;">
-            <img src="/assets/images/logo.png" alt="">
-        </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <a href="#" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      <h1 class="logo me-auto"><a href="#">PICTOREAL</a></h1>
+
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#portfolio">Gallery</a></li>
+          <!-- <li><a href="./TeamMembers/OurTeam.html">Our Team</a></li> -->
+          <li class="dropdown"><a href="./magzines/index.html"><span>Magazines</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./magzines/vol-23.html">Volume 23</a></li>
+              <li><a href="./magzines/vol-22.html">Volume 22</a></li>
+              <li><a href="./magzines/vol-21.html">Volume 21</a></li>
+              <li><a href="./magzines/index.html">More...</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="./magzines/vol-24.html" class="getstarted">Volume 24</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
     </div>
-    <div style="background-color: transparent; opacity: 1">
+  </header><!-- End Header -->
 
-        <div class="div_btn_navbar" id="div_btn_navbar">
-            <!-- <a href="#"
-                class="btn btn--white btn--animated">PictoBlogs</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-            <a href="/magazines/preview/?vol=22" class="btn btn--white btn--animated">Volume
-                22</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/magazines"
-                class="btn btn--white btn--animated">Magazines</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/quiz" class="btn btn--white btn--animated">The Ganesh Trivia</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="4000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(assets/img/slide/1.JPG)">
+          <div class="carousel-container">
+
+          </div>
         </div>
 
-        <div class="navbar" id="navbar">
-            <a onclick="toTop()" style="cursor: pointer;"><img src="assets/images/logo.png" alt="Pictoreal logo"
-                    class="logo_navbar" id="logo_navbar"></a>
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(assets/img/slide/2.jpg)">
+          <div class="carousel-container">
+            <div class="container">
 
-
-        </div>
-        <div class="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-            <label for="navi-toggle" class="navigation__button" id="navigation__button">
-                <span class="navigation__icon" id="navigation__icon">&nbsp;</span>
-            </label>
-
-            <div class="navigation__background" id="navigation__background">&nbsp;</div>
-
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="/" class="navigation__link">Home</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="/magazines" class="navigation__link">Magazines</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="/gallery" class="navigation__link">Gallery</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="/team" class="navigation__link">Team Members</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="/contact" class="navigation__link">Contact Us</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="/clubs" class="navigation__link">College Clubs</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div>
-        <div class="ss_skew">
-            <div class="ofhide" id="ofhide">
-                <!-- <img class="mySlides" src="assets/images/slideshow/poster.jpg" style="width:100%"> -->
-                <img src="assets/images/slideshow/GaneshCh2020.jpg" class="mySlides" style="width: 100%;"/>
-                <img class="mySlides" src="assets/images/slideshow/1.jpg" style="width:100%">
-                <img class="mySlides" src="assets/images/slideshow/2.jpg" style="width:100%">
-                <!-- <img class="mySlides" src="assets/images/slideshow/3.jpg" style="width:100%"> -->
-                <input type="hidden" style="font-size: 10rem;" id="btntxt1" value="">
-                <input type="hidden" style="font-size: 10rem;" id="btntxt2" value="">
-                <input type="hidden" style="font-size: 10rem;" id="btntxt3" value="">
-                <input type="hidden" style="font-size: 10rem;" id="btnlnk1" value="https://www.python.org/">
-                <input type="hidden" style="font-size: 10rem;" id="btnlnk2" value="#events">
-                <input type="hidden" style="font-size: 10rem;" id="btnlnk3" value="#events">
-                <button class="slideshow_btns left" onclick="changeDivs(-1)">&#10094;</button>
-                <button class="slideshow_btns right" onclick="changeDivs(1)">&#10095;</button>
-                <div class="picto_heading" id="picto_heading">
-                    <h2 style="margin-bottom: 0;padding-bottom: 0; width: 100vw;" class="pictotreal-heading">Pictoreal
-                    </h2>
-
-
-                </div>
-                <div class="slideshow_black"></div>
             </div>
+          </div>
         </div>
-        <script src="assets/js/slideshow.js"></script>
-        <a href="/magazines/preview/?vol=22" class="mobile-only btn btn--white btn--animated " style="background: #000;
-    transform: translate(-50%);
-    left: 50%;
-    margin-top: 2.5rem;
-    font-size: 2.5rem;
-    padding: 1.28rem 3rem;
-    width: fit-content;">Volume
-            22</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><a href="/magazines"
-            class=" mobile-only btn btn--white btn--animated " style="background: #000;
-    transform: translate(-50%);
-    left: 50%;
-    margin-top: 2.5rem;
-    font-size: 2.5rem;
-    padding: 1.28rem 3rem;
-    width: fit-content;">Magazines</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </div>
-    </div>
 
-
-
-
-    <!------------------Content---------------->
-
-    <div style="background-color: #f7f7f7;"></div>
-
-
-
-    <section class="section-features1">
-
-        <div class="u-center-text u-margin-bottom-big">
-            <h2 class="heading-secondary">
-                INTRODUCTION
-            </h2>
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(assets/img/slide/3.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <!-- <h2 class="animate__animated animate__fadeInDown">PICTOREAL</h2> -->
+              <!-- <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a> -->
+            </div>
+          </div>
         </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row content">
+          <div class="col-lg-6">
+
+            <h2 class="heads">About Us</h2>
+            <!-- <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave</h3> -->
+            <div class="phnx d-none d-lg-block"><img src="assets/img/phnx.png" width="80%" alt=""></div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>A magazine is an experiment and represents a new focus, a new ratio between commerce and intellect.
+            <p>
+            <p>Pictoreal is one of the non-technical clubs in PICT. At pictoreal, we create and publish an annual
+              magazine of PICT with unique themes every year. Pictoreal organizes several enthusiastic events throughout
+              the year to boost creative minds. The club always focuses on promoting one’s skills in literature,
+              designing, and photography. The club always supports individuals to build practical skills like event
+              management, public oration, teamwork, and much more. To enhance the productive skills, we organize
+              multiple events like Pics-o-Reel, an annual art and photography exhibition where students can showcase
+              their art pieces, Manthan, an event to promote public speaking skills which consist of mini-events like
+              extempore, debates, group discussions, etc. Pictosocial, a subgroup of Pictoreal believes the culture in
+              PICT to lose ourselves in the service of others till we discover our own lives and our happiness. To
+              promote the same, we organize events like Tree plantation drives, blood donation and Money donation
+              drives, and Old-age or Orphanage visits. To guide and communicate with students in remote areas, we
+              organize Career counselling sessions. Here at Pictoreal, we try to step forward, reach out and help the
+              students in PICT unleash their creative side.
+            <p>
+            <p>Our members in PICTOREAL always live by one motto-
+            <p>
+            <p class="fst-italic">
+              ‘May Thoughts, Colours and Words prevail!’
+            </p>
+
+            </p>
+            <!-- <ul>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>
+              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>
+            </ul>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p> -->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counter Section ======= -->
+    <section>
+      <h2 class="heads">Numbers That we admire!</h2>
+      <div class="project-counter-wrp container">
+        <ul>
+          <li>
+            <i class="fas fa-calendar"></i>
+            <p id="number1" class="number"> 25+</p>
+            <span></span>
+            <p>Years since inception</p>
+          </li>
+          <li>
+            <i class="fas fa-paint-brush"></i>
+            <p id="number2" class="number"> 10+</p>
+            <span></span>
+            <p>Events Done</p>
+          </li>
+          <li>
+            <i class="fas fa-people-group"></i>
+            <p id="number3" class="number"> 120+</p>
+            <span></span>
+            <p>Members</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <script>
+        var years = setInterval(yearscompleted, 30)
+        var events = setInterval(eventsdone, 30)
+        var Members = setInterval(Members, 30)
+        let count1 = 1;
+        let count2 = 1;
+        let count3 = 1;
+
+        function yearscompleted() {
+          count1++;
+          document.querySelector("#number1").innerHTML = count1;
+
+          //stop at given condition
+          if (count1 == 25) {
+            clearInterval(years)
+          }
+        }
+        function eventsdone() {
+          count2++;
+          document.querySelector("#number2").innerHTML = count1;
+
+          //stop at given condition
+          if (count2 == 10) {
+            clearInterval(events)
+          }
+        }
+        function Members() {
+          count3++;
+          document.querySelector("#number3").innerHTML = count1;
+
+          //stop at given condition
+          if (count3 == 120) {
+            clearInterval(Members)
+          }
+        }
+      </script> -->
+    </section><!-- End counter Section -->
+    <!-- ======= Events Section ======= -->
+    <!-- <section id="services" class="services">
+
+      <div class="container">
+
         <div class="row">
-            <p style="font-size: 2.5rem" data-aos="fade-up">
-                A magazine- a relevant one-should be a sound in itself and not just an echo.<br><br> PICTOREAL is a
-                community of artists, writers, social workers, and creative thinkers who voice the activities in and
-                around PICT. There’s a lot more to college than its curriculum. At PICTOREAL, we take up the
-                responsibility of creating a collage by putting together articles, interviews, write-ups, pictures, and
-                document the various phases that form an integral part of a student’s life in PICT. Therefore, the best
-                way to discover our college is through our annual magazine. Our club promotes the students and faculty
-                members to showcase and hone their creative and artistic skills by acknowledging their work in our
-                magazine. We conduct editing, designing, carrier guidance workshops, donation drives, photoshoots,
-                exhibitions, and competitions throughout the year with an aim to promote a constructive, healthy, and
-                competitive atmosphere in the college. Our members in PICTOREAL always live by one motto-
-                <br><br>‘May Thoughts, Colours and Words prevail!’
-            </p>
-        </div>
-    </section>
-
-
-    <section class="section-features2">
-
-        <div class="u-center-text u-margin-bottom-big">
-            <div class="u-center-text u-margin-bottom-big">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4" style="min-width: 20%;">
-                            <h1><span class="counter odometer" id="members">50</span></h1>
-                            <h3>Members</h3>
-                            <i target="_blank" class="fa fa-users"></i>
-                        </div>
-                        <div class="col-md-4" style="min-width: 20%;">
-                            <h1><span class="counter odometer" id="years">1</span></h1>
-                            <h3>Years since inception</h3>
-                            <i target="_blank" class="fa fa-clock"></i>
-                        </div>
-                        <div class="col-md-4" style="min-width: 20%;">
-                            <h1><span class="counter odometer" id="hello">1</span></h1>
-                            <h3>Events in 2019-20</h3>
-                            <i target="_blank" class="fa fa-calendar-week"></i>
-                        </div>
-                        <div class="col-md-4" style="min-width: 20%;">
-                            <h1><span class="counter odometer" id="moolah"><span>₹</span>50,000</span></h1>
-                            <h3>Donated in 2019-20</h3>
-                            <i target="_blank" class="fa fa-money-check-alt"></i>
-                        </div>
-                    </div>
-                </div>
+          <div class="col-md-6">
+            <div class="icon-box">
+              <i class="bi bi-briefcase"></i>
+              <h4><a href="#">Lorem Ipsum</a></h4>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
             </div>
-
-    </section>
-
-
-    <section class="section-about">
-        <div class="u-center-text u-margin-bottom-big">
-            <h2 class="heading-secondary">
-                MAGAZINE
-            </h2>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-card-checklist"></i>
+              <h4><a href="#">Dolor Sitema</a></h4>
+              <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-bar-chart"></i>
+              <h4><a href="#">Sed ut perspiciatis</a></h4>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-binoculars"></i>
+              <h4><a href="#">Nemo Enim</a></h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-brightness-high"></i>
+              <h4><a href="#">Magni Dolore</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-calendar4-week"></i>
+              <h4><a href="#">Eiusmod Tempor</a></h4>
+              <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div>
         </div>
 
-        <div class="row">
-            <div class="col-1-of-2">
-                <p style="font-size: 2.5rem ; top: 0.5rem" data-aos="fade-up">
+      </div> -->
+    <!-- End Events Section -->
 
-                    22 Years of Legacy, 22 years of Togetherness, 22 years of Pictoreal.<br /><br>
-                    Pictoreal, the annual college magazine of PICT, brings together every creative mind in PICT, where
-                    people learn and work together to create a masterpiece, every year. Whether it is writing an
-                    article, poem pondering over some random thoughts or designing a page, Pictoreal always helps each
-                    individual to develop through it.
-                    <br><br>Enter in a collection of articles, poems and designs from the finest writers and designers
-                    of PICT, fun engaging polls, intellectual interviews and many more. We assure you Pictoreal will
-                    bring back to you the moments you enjoyed, events you organized and participated in, teams you
-                    worked for and a beautiful world of words.
-                </p>
-                <a href="magazines" class="btn_fill_-text" data-aos="fade-up">Learn more →</a>
+    <section id="events">
+      <h2 class="heads">Our Events</h2>
+      <div class="container">
+        <ul class="cards">
+          <li class="card cards__item">
+            <div class="card__frame">
+              <div class="card__picture">
+                <img src="./assets/img/events/e1.png" alt="" width="120">
+              </div>
+              <h2 class="card__title">Career Mantra</h2>
             </div>
-            <div class="col-1-of-2">
-                <div class="composition" data-aos="fade-up">
-
-                    <a href="/magazines/preview/?vol=22"><img src="assets/images/picto-volumes/vol_2020_22.png" style="top: 0"
-                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 1"
-                            class="composition__photo composition__photo--p1"></a>
-
-                </div>
+            <div class="card__overlay"></div>
+            <div class="card__content">
+              <h2>Career Mantra</h2>
+              <p>Career Mantra was conducted on 11th October 2019. The 2 hours long session focused on
+                ‘Development and Competitive Coding’. Around 130 students and the speakers were present for te
+                event. The speakers were 6 final year students who were divided into groups of 3 to help
+                students understand the various domains and learn from their seniors’ experiences.
+              </p>
             </div>
-        </div>
-    </section>
-    <br><br><br><br><br><br>
-
-
-    <section class="section-features" id="events">
-
-
-        <div class="u-center-text u-margin-bottom-big">
-            <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">
-                    EVENTS
-                </h2>
+          </li>
+          <li class="card cards__item">
+            <div class="card__frame">
+              <div class="card__picture">
+                <img src="./assets/img/events/e2.png" alt="" width="120">
+              </div>
+              <h2 class="card__title">Manthan</h2>
             </div>
-            <div class="row">
-                <div class="col-1-of-3">
-                    <div class="feature-box" data-aos="zoom-in">
-                        <h3 class="heading-tertiary u-margin-bottom-small">CAREER MANTRA</h3>
-                        <div class="feature-box__picture">
-                            <img src="assets/images/e1.png" class="feature-box__picture">
-                        </div>
-                        <a href="#popup1" class="btn_fill_ btn_fill_--white ">KNOW MORE</a>
-                    </div>
-                </div>
-
-
-                <div class="col-1-of-3">
-                    <div class="feature-box" data-aos="zoom-in">
-
-                        <h3 class="heading-tertiary u-margin-bottom-small">MANTHAN</h3>
-                        <div class="feature-box__picture">
-                            <img src="assets/images/e2.png" class="feature-box__picture">
-                        </div>
-                        <a href="#popup2" class="btn_fill_ btn_fill_--white ">KNOW MORE</a>
-                    </div>
-                </div>
-
-                <div class="col-1-of-3">
-                    <div class="feature-box" data-aos="zoom-in">
-
-                        <h3 class="heading-tertiary u-margin-bottom-small">PICS-O-REEL</h3>
-                        <div class="feature-box__picture">
-                            <img src="assets/images/e3.png" class="feature-box__picture">
-                        </div>
-                        <a href="#popup3" class="btn_fill_ btn_fill_--white ">KNOW MORE</a>
-                    </div>
-                </div>
-
-
+            <div class="card__overlay"></div>
+            <div class="card__content">
+              <h2>Manthan</h2>
+              <p>“Ideas are born and nurtured but only through a Manthan within.”
+                Manthan, Pictoreal’s prestigious annual public speaking event, encourages PICTians to speak in
+                order to test their imaginative as well as public speaking skills. The event was conducted on
+                January 16, 2020.
+              </p>
             </div>
-
-
-            <div class="row">
-                <div class="col-1-of-3">
-                    <div class="feature-box" data-aos="zoom-in">
-
-                        <h3 class="heading-tertiary u-margin-bottom-small">BLOOD DONATION </h3>
-                        <div class="feature-box__picture">
-                            <img src="assets/images/e4.png" class="feature-box__picture">
-                        </div>
-                        <a href="#popup4" class="btn_fill_ btn_fill_--white ">KNOW MORE</a>
-                    </div>
-                </div>
-
-
-                <div class="col-1-of-3">
-                    <div class="feature-box" data-aos="zoom-in">
-
-                        <h3 class="heading-tertiary u-margin-bottom-small">DONATION DRIVE</h3>
-                        <div class="feature-box__picture">
-                            <img src="assets/images/e5.png" class="feature-box__picture">
-                        </div>
-                        <a href="#popup5" class="btn_fill_ btn_fill_--white ">KNOW MORE</a>
-                    </div>
-                </div>
-
-                <div class="col-1-of-3">
-                    <div class="feature-box" data-aos="zoom-in">
-
-                        <h3 class="heading-tertiary u-margin-bottom-small">BE PHOTOSHOOT</h3>
-                        <div class="feature-box__picture">
-                            <img src="assets/images/e6.png" class="feature-box__picture">
-                        </div>
-                        <a href="#popup6" class="btn_fill_ btn_fill_--white ">KNOW MORE</a>
-                    </div>
-                </div>
-
-
+          </li>
+          <li class="card cards__item">
+            <div class="card__frame">
+              <div class="card__picture">
+                <img src="./assets/img/events/e3.png" alt="" width="120">
+              </div>
+              <h2 class="card__title">Pics-O-Reel</h2>
             </div>
-    </section>
-
-
-    <section class="section-features1">
-
-        <div class="u-center-text u-margin-bottom-big">
-            <h2 class="heading-secondary">
-                PICTOSOCIAL
-            </h2>
-        </div>
-
-        <div class="row1">
-            <div class="col-1-of-2">
-                <p style="font-size: 2.5rem" data-aos="fade-up">
-
-                    “Not all of us can do great things, but we can do small things with great love.”<br><br>
-                    Pictosocial is the part of Pictoreal that conducts various activities to instill the importance of
-                    social service among students. Pictosocial is a group of self-motivated individuals who willingly
-                    come forward to offer help to various sections of the society.
-                    <br><br>All the Pictosocial activities conducted throughout the year are a result of hard work of
-                    the volunteers and members. Their willingness to serve the society is what propels us to work more.
-
-                </p>
+            <div class="card__overlay"></div>
+            <div class="card__content">
+              <h2>Pics-O-Reel</h2>
+              <p>
+                “A picture is a poem without words”
+                Pics-O-Reel, an annual art and photography exhibition organized by team Pictoreal was conducted
+                on 20th January , it received around 340 entries and a huge response of about 800 visitors.
+                The Principal appreciated our team for the organization and management of the event. For the
+                first time a QRbased voting platform was developed by SE students which replaced the manual
+                voting process.
+              </p>
             </div>
-            <div class="col-1-of-2">
-                <div class="composition1" data-aos="fade-up">
-
-                    <img src="assets/images/pictosocial.png"
-                        sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 1"
-                        class="composition1__photo composition1__photo--p1">
-
-                </div>
+          </li>
+          <li class="card cards__item">
+            <div class="card__frame">
+              <div class="card__picture">
+                <img src="./assets/img/events/e4.png" alt="" width="120">
+              </div>
+              <h2 class="card__title">Blood Donation</h2>
             </div>
-        </div>
-    </section>
-
-
-
-
-    <section class="section-features3">
-
-        <div class="u-center-text u-margin-bottom-big">
-            <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">
-                    our team
-                </h2>
-            </div>
-
-
-            <div class="row">
-                <div class="col-1-of-4" id="team">
-                    <div class="card" data-aos="fade-up">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--1">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--1">MAGAZINE COORDINATOR</span>
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li>Mrs. Manjeeta R. Kale</li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- <div class="card__side card__side--back card__side--back-1">
-                            <div class="card__cta">
-                                <div class="card__quote-box">
-                                    <p class="card__quote-only">***Quote***</p>
-
-                                </div>
-                                <a href="#popupM1" class="btn_fill_ btn_fill_--white">Message</a>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-1-of-4">
-                    <div class="card" data-aos="fade-up">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--2">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--2">MAGAZINE COORDINATOR</span>
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li>Mr. Vishal R. Jaiswal</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <!-- <div class="card__side card__side--back card__side--back-3">
-                            <div class="card__cta">
-                                <div class="card__quote-box">
-                                    <p class="card__quote-only">***Quote***</p>
-
-                                </div>
-                                <a href="#popupM3" class="btn_fill_ btn_fill_--white">Message</a>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-
-
-                <div class="col-1-of-4">
-                    <div class="card" data-aos="fade-up">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--3">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--3">MAGAZINE SECRETARY</span>
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li>Jayprakash Chawla</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <!-- <div class="card__side card__side--back card__side--back-2">
-                            <div class="card__cta">
-                                <div class="card__quote-box">
-                                    <p class="card__quote-only">***Quote***</p>
-
-                                </div>
-                                <a href="#popupM2" class="btn_fill_ btn_fill_--white">Message</a>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-
-
-                <div class="col-1-of-4">
-                    <div class="card" data-aos="fade-up">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--4">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--3">MAGAZINE SECRETARY</span>
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li>Shirniwas Nayak</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <!-- <div class="card__side card__side--back card__side--back-3">
-                            <div class="card__cta">
-                                <div class="card__quote-box">
-                                    <p class="card__quote-only">***Quote***</p>
-
-                                </div>
-                                <a href="#popupM3" class="btn_fill_ btn_fill_--white">Message</a>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-
-            </div>
-            <a href="team" class="btn_fill_1 btn_fill_1--white btn_fill_1--animated"
-                style="margin-bottom: 15vh;margin-top: 7vh; ">MEET OUR TEAM</a>
-    </section>
-
-
-
-
-
-
-    <div class="popup" id="popup1">
-        <div class="popup__content">
-
-
-            <a href="#events" class="popup__close">×</a>
-
-            <p class="popup__text">
-                Career Mantra was conducted on 11th October 2019. The 2 hours long session focused on ‘Development and
-                Competitive Coding’. Around 130 students and the speakers were present for te event. The speakers were 6
-                final year students who were divided into groups of 3 to help students understand the various domains
-                and learn from their seniors’ experiences.
-
-            </p>
-
-        </div>
-    </div>
-    <div class="popup" id="popup2">
-        <div class="popup__content">
-
-
-            <a href="#events" class="popup__close">×</a>
-
-            <p class="popup__text">
-                “Ideas are born and nurtured but only through a Manthan within.”<br><br>
-                Manthan, Pictoreal’s prestigious annual public speaking event, encourages PICTians to speak in order to
-                test their imaginative as well as public speaking skills. The event was conducted on January 16, 2020.
-            </p>
-
-        </div>
-    </div>
-
-    <div class="popup" id="popup3">
-        <div class="popup__content">
-
-
-            <a href="#events" class="popup__close">×</a>
-
-            <p class="popup__text">
-                “A picture is a poem without words” <br><br>Pics-O-Reel, an annual art and photography exhibition
-                organized by team Pictoreal was conducted on 20th January , it received around 340 entries and a huge
-                response of about 800 visitors.
-                <br><br>The Principal appreciated our team for the organization and management of the event. For the
-                first time a QRbased voting platform was developed by SE students which replaced the manual voting
-                process.
-            </p>
-
-        </div>
-    </div>
-
-    <div class="popup" id="popup4">
-        <div class="popup__content">
-
-
-            <a href="#events" class="popup__close">×</a>
-
-            <p class="popup__text">
-                "Blood Donation will cost you nothing, but it will save a life!”<br><br>
-                The annual blood Donation Camp was organized on February 10, 2020 by Pictoreal in collaboration with NSS
-                and with the help of Poona Serological Blood Bank at PICT.
-                <br><br>The event witnessed 364 bottles of blood being donated on a single day. The success of the event
+            <div class="card__overlay"></div>
+            <div class="card__content">
+              <h2>Blood Donation</h2>
+              <p>
+                "Blood Donation will cost you nothing, but it will save a life!”
+                The annual blood Donation Camp was organized on February 10, 2020 by Pictoreal in collaboration
+                with NSS and with the help of Poona Serological Blood Bank at PICT.
+                The event witnessed 364 bottles of blood being donated on a single day. The success of the event
                 was so massive that it was showcased on the college website for the first time.
-
-            </p>
-
-        </div>
-    </div>
-    <div class="popup" id="popup5">
-        <div class="popup__content">
-
-
-            <a href="#events" class="popup__close">×</a>
-
-            <p class="popup__text">
-                "Happiness does not come from what we get, but from what we give.”<br><Br>
-                The annual Donation Drive of Pictoreal spanning from February 03, 2020 to February 29, 2020. The drive
-                aimed at collecting all sorts of benefactions including money, clothes, etc from those who wished to
-                contribute to providing for the less fortunate residents of the city.
-            </p>
-
-        </div>
-    </div>
-    <div class="popup" id="popup6">
-        <div class="popup__content">
-
-
-            <a href="#events" class="popup__close">×</a>
-
-            <p class="popup__text">
-                The most awaited BE Photoshoot took place on February 25, 2020. Team Pictoreal and eight hundred BE
-                students were on the campus, ready for the photoshoot with the esteemed presence of the faculty and
-                other staff.
-
-            </p>
-
-        </div>
-    </div>
-
-
-
-    <div class="popup1" id="popup8">
-        <div class="popup1__content">
-
-            <center>
-                <h2 class="heading-secondary1">
-                    Developers
-                </h2>
-            </center>
-            <a href="#footer_main" id="popup-close" class="popup1__close"> × </a>
-            <section class="section-features4">
-
-
-
-
-
-                <div class="row">
-                    <div style="transform: skewY(0);">
-
-                        <div class="col-1-of-3">
-                            <div class="our-team" style="margin-left: auto; margin-right: auto;">
-                                <div class="picture">
-                                    <img class="img-fluid" src="assets/images/developers/prathamesh.jpg">
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="name">Prathamesh Shiralkar</h3>
-                                </div>
-                                <ul class="social">
-
-                                    <li><a href="https://www.linkedin.com/in/pnshiralkar" target="_blank"
-                                            class="fab fa-linkedin" aria-hidden="true"></a></li>
-                                    <li><a href="https://github.com/pnshiralkar/" target="_blank" class="fab fa-github"
-                                            aria-hidden="true"></a></li>
-
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-1-of-3">
-                            <div class="our-team" style="margin-left: auto; margin-right: auto;">
-                                <div class="picture">
-                                    <img class="img-fluid" src="assets/images/developers/pratik.jpg">
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="name">Pratik Daigavane</h3>
-                                </div>
-                                <ul class="social">
-
-                                    <li><a href="https://www.linkedin.com/in/pratikdaigavane/" target="_blank"
-                                            class="fab fa-linkedin" aria-hidden="true"></a></li>
-                                    <li><a href="https://github.com/pratikdaigavane" target="_blank"
-                                            class="fab fa-github" aria-hidden="true"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-1-of-3">
-                            <div class="our-team" style="margin-left: auto; margin-right: auto;">
-                                <div class="picture">
-                                    <img class="img-fluid" src="assets/images/developers/rohit.jpg">
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="name">Rohit Pardeshi</h3>
-                                </div>
-                                <ul class="social">
-
-                                    <li><a href="https://www.linkedin.com/in/rohit-pardeshi-785921176" target="_blank"
-                                            class="fab fa-linkedin" aria-hidden="true"></a></li>
-                                    <li><a href="https://github.com/rohitpardeshi04" target="_blank"
-                                            class="fab fa-github" aria-hidden="true"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div style="transform: skewY(0);">
-
-                        <div class="col-1-of-2">
-                            <div class="our-team" style="margin-left: auto; margin-right: auto;">
-                                <div class="picture">
-                                    <img class="img-fluid" src="/assets/images/developers/devangini.jpeg">
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="name">Devangini Shinde</h3>
-                                </div>
-                                <ul class="social">
-
-                                    <li><a href="https://www.linkedin.com/in/devangini-shinde-287319197" target="_blank"
-                                            class="fab fa-linkedin" aria-hidden="true"></a></li>
-                                    <li><a href="https://github.com/Devangini01" target="_blank" class="fab fa-github"
-                                            aria-hidden="true"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-1-of-2">
-                            <div class="our-team" style="margin-left: auto; margin-right: auto;">
-                                <div class="picture">
-                                    <img class="img-fluid" src="assets/images/developers/mitali.jpeg">
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="name">Mitali Sonawane</h3>
-                                </div>
-                                <ul class="social">
-
-                                    <li><a href="https://www.linkedin.com/in/mitali-sonawane-011754199" target="_blank"
-                                            class="fab fa-linkedin" aria-hidden="true"></a></li>
-                                    <li><a href="https://github.com/mitalirs" target="_blank" class="fab fa-github"
-                                            aria-hidden="true"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-        </div>
-
-        </section>
-    </div>
-
-
-
-
-
-    <!------------------Content---------------->
-
-
-    <div class="footer_skew" id="footer_main">
-        <footer>
-            <div class="overlay"> </div>
-            <div class="foot_inside" style="text-align: center;">
-                <a href="https://www.pict.edu" target="_blank"><img src="assets/images/pict_logo.png" alt="PICT Logo"
-                        title="PICT-Top Engineering College" class="pictlogo"></a>
-                <a onclick="toTop()" style="cursor: pointer;"><img src="assets/images/logo.png" class="logo_footer"
-                        id="logo_footer"></a><br>
-                <div class="footer_col">
-                    <a class="footer_links" href="gallery">Gallery</a><br>
-                    <a class="footer_links" href="#events">Events</a><br>
-                    <a class="footer_links" href="team">Our Team</a><br>
-
-                </div>
-                <div class="footer_col">
-                    <a class="footer_links" href="magazines">Archives</a><br>
-                    <a class="footer_links" href="vol22">Magazine</a><br>
-                    <a class="footer_links" href="">About us</a><br>
-                </div>
-                <br><br>
-                <div class="social">
-                    <a href="https://www.facebook.com/pictoreal/" target="_blank"
-                        class="social_icons fab fa-facebook-square"></a>
-                    <a href="https://www.instagram.com/pictoreal/" target="_blank"
-                        class="social_icons fab fa-instagram"></a>
-                    <a href="https://www.linkedin.com/company/pictoreal" target="_blank"
-                        class="social_icons fab fa-linkedin"></a>
-                    <a href="mailto:pictoreal@pict.edu" class="social_icons"> <i
-                            style="color: #000; font-size: 5rem; text-decoration: none;" class=" fa fa-envelope"
-                            aria-hidden="true"></i>
-                    </a>
-                </div>
-                <br><br>
-                <div class="copyright" id="footer10">
-                    &copy;Pictoreal 2019<br>
-                    Developed with ❤ by <a style="color: white" href="#popup8">Pictoreal Web team.</a>
-                </div>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+              </p>
             </div>
-        </footer>
+          </li>
+          <li class="card cards__item">
+            <div class="card__frame">
+              <div class="card__picture">
+                <img src="./assets/img/events/e5.png" alt="" width="120">
+              </div>
+              <h2 class="card__title">Donation Drive</h2>
+            </div>
+            <div class="card__overlay"></div>
+            <div class="card__content">
+              <h2>Donation Drive</h2>
+              <p>"Happiness does not come from what we get, but from what we give.”
+                The annual Donation Drive of Pictoreal spanning from February 03, 2020 to February 29, 2020. The
+                drive aimed at collecting all sorts of benefactions including money, clothes, etc from those who
+                wished to contribute to providing for the less fortunate residents of the city.
+              </p>
+            </div>
+          </li>
+          <li class="card cards__item">
+            <div class="card__frame">
+              <div class="card__picture">
+                <img src="./assets/img/events/e6.png" alt="" width="120">
+              </div>
+              <h2 class="card__title">BE Photoshoot</h2>
+            </div>
+            <div class="card__overlay"></div>
+            <div class="card__content">
+              <h2>BE Photoshoot</h2>
+              <p>
+                The most awaited BE Photoshoot took place on February 25, 2020. Team Pictoreal and eight hundred
+                BE students were on the campus, ready for the photoshoot with the esteemed presence of the
+                faculty and other staff.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <h2 class="heads"> Gallery</h2>
+      <div class="container">
+
+        <!-- <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets\img\portfolio\1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Team</h4>
+                <p>Traditional day</p>
+                <div class="portfolio-links">
+                  <a href="assets\img\portfolio\1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                    title="Pictoreal Team"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets\img\portfolio\2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Blood Donation</h4>
+                <p>Blood donation</p>
+                <div class="portfolio-links">
+                  <a href="assets\img\portfolio\2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                    title="Blood Donation"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets\img\portfolio\3.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Online Interviews</h4>
+                <p>Part 1</p>
+                <div class="portfolio-links">
+                  <a href="assets\img\portfolio\3.png" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Online Interviews"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets\img\portfolio\4.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Online Interviews</h4>
+                <p>Part 2</p>
+                <div class="portfolio-links">
+                  <a href="assets\img\portfolio\4.png" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Online Interviews"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="..\Sailor\assets\img\portfolio\5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Blood Donation</h4>
+                <p>Blood Donation</p>
+                <div class="portfolio-links">
+                  <a href="..\Sailor\assets\img\portfolio\5.jpg" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Blood Donation"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="..\Sailor\assets\img\portfolio\6.JPG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>BE Photoshoot for 2022 batch</h4>
+                <p>BE Photoshoot</p>
+                <div class="portfolio-links">
+                  <a href="..\Sailor\assets\img\portfolio\6.JPG" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="BE Photoshoot"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets\img\portfolio\IMG_20220304_102603.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Blood Donation</h4>
+                <p>Blood Donation</p>
+                <div class="portfolio-links">
+                  <a href="assets\img\portfolio\IMG_20220304_102603.jpg" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+          <!-- </div>
+              </div>
+            </div>
+          </div> --> -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets\img\portfolio\7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Donation Drive</h4>
+                <p>Donation Drive</p>
+                <div class="portfolio-links">
+                  <a href="assets\img\portfolio\7.jpg" data-gallery="portfolioGallery"
+                    class="portfolio-lightbox" title="Donation Drive"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 d-flex justify-content-md-center mb-3">
+            <div class="footer-info">
+              <h3>PICTOREAL</h3>
+              <p style="margin-bottom: 0px; padding-bottom: 0px;">
+                Survey No. 27, Near, Trimurti Chowk, Bharati Vidyapeeth Campus, Dhankawadi, Pune, Maharashtra
+                411043<br><br>
+              </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.576189725422!2d73.84864491501206!3d18.457542087445685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac85230ba47%3A0x871eddd0a8a0a108!2sSCTR&#39;S%20Pune%20Institute%20of%20Computer%20Technology!5e0!3m2!1sen!2sin!4v1663048141570!5m2!1sen!2sin"
+                style="border-radius: 20px; margin-top: 0px; width: 100%;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 col-sm-6 footer-links d-flex justify-content-md-center mb-3">
+            <div class="footer-info">
+              <h3>Useful Links</h3>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#events">Events</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Gallery</a></li>
+                <!-- <li><i class="bx bx-chevron-right"></i> <a href="./TeamMembers/OurTeam.html">Our Team</a></li> -->
+                <li><i class="bx bx-chevron-right"></i> <a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6 d-flex justify-content-md-center mb-3">
+            <div class="footer-info">
+              <h3>Socials</h3>
+              <strong>Phone:</strong> 020 2437 2041<br>
+              <strong>Email:</strong> pictoreal@pict.edu<br>
+              <div class="social-links mt-3">
+
+                <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                <a href="https://www.facebook.com/pictoreal/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/pictoreal/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+                <a href="https://www.linkedin.com/company/pictoreal/" class="linkedin"><i
+                    class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
 
-    <script>
+    <div class="container">
+    </div>
+    <div class="credits">
+      Designed by <a href="">Team Pictoreal</a>
+    </div>
+    </div>
+  </footer><!-- End Footer -->
 
-        $(window).on('load', function () {
-            $(".loader").delay(1500).fadeOut("slow");
-            $("#overlayer").delay(1500).fadeOut("slow");
-        })
-    </script>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
-    <script type="text/javascript">
-
-        // $(document).ready(function(){
-        //   $("#popup-close").click(function(){
-        //     $("#popup8").css("display", "none");
-        //   });
-        //   $("#team").click(function(){
-        //     $("#popup8").css("display", "block");
-        //   });
-        // });
-
-
-
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            // Global settings:
-            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-            initClassName: 'aos-init', // class applied after initialization
-            animatedClassName: 'aos-animate', // class applied on animation
-            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-
-            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-            offset: 120, // offset (in px) from the original trigger point
-            delay: 0, // values from 0 to 3000, with step 50ms
-            duration: 400, // values from 0 to 3000, with step 50ms
-            easing: 'ease', // default easing for AOS animations
-            once: false, // whether animation should happen only once - while scrolling down
-            mirror: false, // whether elements should animate out while scrolling past them
-            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-        });
-    </script>
-    <script type="text/javascript">
-        setTimeout(function () {
-            members.innerHTML = 120;
-        }, 1000);
-        setTimeout(function () {
-            years.innerHTML = 22;
-        }, 1000);
-
-        setTimeout(function () {
-            moolah.innerHTML = 101009;
-        }, 1000);
-        setTimeout(function () {
-            hello.innerHTML = 9;
-        }, 1000);
-    </script>
 </body>
 
 </html>
